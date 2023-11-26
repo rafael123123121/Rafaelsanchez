@@ -1,77 +1,147 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>FoC</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
+    <title>FoC</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
 
-</style>
+        section {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-top: 10px;
+            width: 200px;
+        }
+
+        button {
+            background-color: #144579;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        table {
+            border: 1px solid black;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 20px;
+        }
+
+        th {
+            padding: 20px;
+        }
+
+        a {
+            color: #283e55;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            position: absolute;
+            bottom: 1;
+            width: 100%;
+        }
+
+        footer p {
+            margin-bottom: 0;
+        }
+        .back-home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #132130;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        back-home-button:hover {
+        background-color: #031942;
+    }
+    </style>
 </head>
 <body>
 
 <section>
-<h2>Project 1: UNICODE</h2>
-<hr>
-
-<center>
-<p>Please input UNICODE number:</p>
-
-<input id="numb" type="text">
-
-<button type="button" onclick="myFunction()">Submit</button>
-<br>
-<table style="border:1px solid black;margin-left:auto;margin-right:auto;">
- 
-  <tr>
-    <th><center><p id="demo"></center></p></th>
-  </tr>
-  
-</table>
-
-
-<p><img src="uni1.jpg" style="width:700px;height:400px;"></p>
-<p><img src="uni3.jpg" style="width:700px;height:400px;"></p>        
-<p><img src="uni4.jpg" style="width:700px;height:400px;"></p>  			
-
-<p></p>
-<p></p>         
-
-<br>
-
-
-</center>
-
-<script>
-function myFunction() {
-  var x, text;
-
-  // Get the value of the input field with id="numb"
-  x = document.getElementById("numb").value;
-
-  
-    text = x;
-    unicode = ("&#x" + x)
-  
-  document.getElementById("demo").innerHTML = unicode;
-}
-</script>
-
-
+    <h2>Project 1: UNICODE</h2>
+    <hr>
+    <center>
+        <p>Please input UNICODE number:</p>
+        <input id="numb" type="text">
+        <button type="button" onclick="myFunction()">Submit</button>
+        <br>
+        <table style="border:1px solid black;margin-left:auto;margin-right:auto;">
+            <tr>
+                <th><center><p id="demo"></p></center></th>
+            </tr>
+        </table>
+        <p><img src="uni1.jpg" style="width:700px;height:400px;"></p>
+        <p><img src="uni3.jpg" style="width:700px;height:400px;"></p>
+        <p><img src="uni4.jpg" style="width:700px;height:400px;"></p>
+    </center>
 </section>
 
+<a href="index.html" class="back-home-button">Back to Home</a>
 
-<a href="index.html">Back to Home</a></h3>
+<footer style="background-color: #f7dc6f; color: #5d3c81; padding: 10px 0;">
+    <p>&copy; Powered by UB</p>
+  </footer>
 
-<footer>
-  <p>@ Powered by UB</p>
-</footer>
+<script>
+    function myFunction() {
+        var x, text;
+
+        // Get the value of the input field with id="numb"
+        x = document.getElementById("numb").value;
+
+        text = x;
+        unicode = ("&#x" + x)
+
+        document.getElementById("demo").innerHTML = unicode;
+    }
+</script>
 
 </body>
 </html>
-
 
 
 

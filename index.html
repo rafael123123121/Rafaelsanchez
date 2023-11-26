@@ -1,47 +1,125 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>FoC</title>
-<link rel="stylesheet" type="text/css" href="style.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <style>
+    /* Custom styles for transparent navbar */
+    .navbar-custom {
+      background-color: rgba(); /* Change the last value to adjust transparency */
+    }
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-image: url("ez2.png");
+      background-size: cover;
+      background-position: center;
+      height: 100vh; /* Ensure the image covers the entire viewport */
+      margin: 0;
+      padding: 0;
+    }
+    /* Adjusting navbar link colors */
+    .navbar-light .navbar-nav .nav-link {
+      color: #6400e6; 
+      font-weight: bold;
+    }
+    /* Adjusting navbar brand (FOC) color */
+    .navbar-brand {
+      font-weight: bold;
+      color:#6400e6;
+      font-weight: bold; }
+   
 
+
+    .navbar-toggler-icon {
+      background-color: 1; /* Change the color of the toggler button */
+    }
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      max-width: 800px;
+      margin: 100px auto 20px; /* Adjusted margin top to 100px */
+      padding: 20px;
+      background-color: rgba(); /* Transparent white background */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
+    @media (max-width: 992px) {
+      .navbar-collapse.collapsing ~ .content {
+        margin-top: 170px; /* Adjust the value to suit your needs */
+        transition: margin-top 0.3s; /* Smooth transition when the navbar collapses */
+      }
+    }
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      padding: 20px;
+    }
+    h2 {
+      font-size: 36px;
+      color: #2a00e6;
+      margin-bottom: 20px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+    article {
+      font-size: 18px;
+      color: #2a00e6;
+      background-color: rgba(); /* Transparent white background for text */
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px; /* Spacing between paragraphs */
+    }
+  </style>
 </head>
 <body>
 
-<header>
-  <h2><b>Fundamentals of Computing</b></h2>
-</header>
+<nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">FOC</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="project.html">Projects</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="concepts.html">Concepts</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="databases.html">Databases</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="documentation.html">Documentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="aboutme.html">Dev Team</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-<section>
-  <nav>
-    <ul>
-      <li><h5><a href="index.html">Course</a></h5></li>
-      <li><h5><a href="project.html">Project</a></h5></li>
-	  <li><h5><a href="concepts.html">Concepts</a></h5></li>
-	  <li><h5><a href="database.html">Databases</a></h5></li>
-      <li><h5><a href="aboutme.html">About me</a></h5></li>
-    </ul>
-  </nav>
-  
+<div class="content">
+  <h2>Fundamentals of Computer</h2>
   <article>
-   <center><img src="https://www.vetstreet.com/wp-content/uploads/2022/09/view-pet-portrait-cat-mammal-close-843475-pxhere.com-1.jpg" alt="FoC"  width="505" height="182"></center>
-   <p></p>
+    <p>This course is an introduction to the fundamentals of Computer Science that will provide students with a foundation for future courses in Computer Science. The course is a broad survey of the discipline through topics that allow students to understand the capabilities of computer systems in terms of: the computer architecture; operating systems and computer networks; software and software development; data organization and visualization; and the potential of computing machines.</p>
+  </article>
+</div>
 
-    <p>This course is an introduction to the fundamentals of Computer Science
-that will provide students with a foundation for future courses in Computer
-Science. The course is a broad survey of the discipline through topics that
-allow students to understand the capabilities of computer systems in terms
-of: the computer architecture; operating systems and computer networks;
-software and software development; data organization and visualization;
-and the potential of computing machines.</p>
-    </article>
-</section>
-
-<footer>
-  <p>@ Powered by UB</p>
-</footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
 </html>

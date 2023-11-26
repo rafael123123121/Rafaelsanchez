@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Dev Team</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #fff;
+      padding: 20px 0;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar-custom {
+      background-color: #f7dc6f;
+    }
+
+    .navbar-brand {
+      color: #5d3c81;
+      font-weight: bold;
+    }
+
+    .navbar-nav .nav-link {
+      color: #5d3c81;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 40px 0;
+      text-align: center;
+    }
+
+    .card {
+      border: none;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .card img {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card-body {
+      padding: 20px;
+    }
+
+    .card-title {
+      color: #5d3c81;
+      font-weight: bold;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .card-text {
+      color: #333;
+      font-size: 16px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      background-color: #f7dc6f;
+      color: #5d3c81;
+    }
+  </style>
+</head>
+<body>
+
+<header>  
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top navbar-custom">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FOC</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="projects.html">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="concepts.html">Concepts</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="databases.html">Databases</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="documentation.html">Documentation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">Dev Team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<section class="container">
+  <div class="row">
+    <!-- First team member -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="ez2.png" class="card-img-top" alt="Team Member 1">
+        <div class="card-body">
+          <h5 class="card-title">John Doe</h5>
+          <p class="card-text">Software Developer</p>
+          <a href="#" class="btn btn-primary">View Profile</a>
+        </div>
+      </div>
+    </div>
+    <!-- Second team member -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="team_member2.jpg" class="card-img-top" alt="Team Member 2">
+        <div class="card-body">
+          <h5 class="card-title">Jane Smith</h5>
+          <p class="card-text">UI/UX Designer</p>
+          <a href="#" class="btn btn-primary">View Profile</a>
+        </div>
+      </div>
+    </div>
+    <!-- Third team member -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="team_member3.jpg" class="card-img-top" alt="Team Member 3">
+        <div class="card-body">
+          <h5 class="card-title">Michael Johnson</h5>
+          <p class="card-text">Project Manager</p>
+          <a href="#" class="btn btn-primary">View Profile</a>
+        </div>
+      </div>
+    </div>
+    <!-- Fourth team member -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="team_member4.jpg" class="card-img-top" alt="Team Member 4">
+        <div class="card-body">
+          <h5 class="card-title">Sarah Williams</h5>
+          <p class="card-text">QA Engineer</p>
+          <a href="#" class="btn btn-primary">View Profile</a>
+        </div>
+      </div>
+    </div>
+    <!-- Fifth team member -->
+    <div class="col-md-4">
+      <div class="card">
+        <img src="team_member5.jpg" class="card-img-top" alt="Team Member 5">
+        <div class="card-body">
+          <h5 class="card-title">Alex Brown</h5>
+          <p class="card-text">Frontend Developer</p>
+          <a href="#" class="btn btn-primary">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer>
+  <p>&copy; Powered by UB</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

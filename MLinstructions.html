@@ -2,53 +2,87 @@
 <html>
 <head>
     <title>ML</title>
-	<style>
-img {
-  float: right;
-}
-.button {
-  background-color: #008CBA; /* Blue */
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-</style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h3 {
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #008CBA;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #005f75;
+        }
+
+        img#MLinstrucitons {
+            max-width: 400px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        img#Englishinstrucitons {
+            max-width: 300px;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        a {
+            color: #283e55;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            font-weight: bold;
+        }
+        .back-home-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #132130;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        back-home-button:hover {
+        background-color: #031942;
+    }
+    </style>
 </head>
 <body>
-
-
-<h3>A Simple Interactive Machine Language</h3>
-
-<p>
-
-<img id="MLinstrucitons" src="MLblank.png" >
-
-
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML1.png'; document.getElementById('Englishinstrucitons').src='EI1.png'">156C</button><br>
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML2.png'; document.getElementById('Englishinstrucitons').src='EI2.png'">166D</button><br>
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML3.png'; document.getElementById('Englishinstrucitons').src='EI3.png'">5056</button><br>
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML4.png'; document.getElementById('Englishinstrucitons').src='EI4.png'">306E</button><br>
-<button class="button" onclick="document.getElementById('MLinstrucitons').src='ML5.png'; document.getElementById('Englishinstrucitons').src='EI5.png'">C000</button><br>
-<img id="Englishinstrucitons" src="" >
-
-
-
-
-
-<a href="index.html">Back to Home</a></h3>
-
-</p>
-
-
-
-
-
-
+    <h3>A Simple Interactive Machine Language</h3>
+    <img id="MLinstrucitons" src="MLblank.png">
+    <br>
+    <button class="button" onclick="changeImages('ML1.png', 'EI1.png')">156C</button>
+    <button class="button" onclick="changeImages('ML2.png', 'EI2.png')">166D</button>
+    <button class="button" onclick="changeImages('ML3.png', 'EI3.png')">5056</button>
+    <button class="button" onclick="changeImages('ML4.png', 'EI4.png')">306E</button>
+    <button class="button" onclick="changeImages('ML5.png', 'EI5.png')">C000</button>
+    <img id="Englishinstrucitons" src="">
+    <a href="index.html" class="back-home-button">Back to Home</a>
 </body>
+<script>
+    function changeImages(mlImage, englishImage) {
+        document.getElementById('MLinstrucitons').src = mlImage;
+        document.getElementById('Englishinstrucitons').src = englishImage;
+    }
+</script>
 </html>

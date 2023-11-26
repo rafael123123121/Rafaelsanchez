@@ -1,7 +1,23 @@
 <!DOCTYPE html>
 <html>
 <body>
+    <style>
+    .back-home-button {
+        display: inline-block;
+        padding: 10px 20px;
+        margin-top: 20px;
+        background-color: rgb(26, 31, 37);
+        color: #fcfcfc;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+    }
 
+    .back-home-button:hover {
+        background-color: #031942;
+    }
+  </style>
 <h2> Final Project AND Logic Gate</h2>
 
 <p>This is an animation of a AND Logic Gate</p>
@@ -13,7 +29,7 @@
 <button onclick="document.getElementById('myImage').src='and2on.png'">1 AND 1</button>
 
 <img id="myImage" src="and2off.PNG">
-<a href="index.html">Back to Home</a></h3>
+<a href="index.html" class="back-home-button">Back to Home</a>
 
 
 </body>
